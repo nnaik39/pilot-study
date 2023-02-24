@@ -146,39 +146,64 @@ var main = {
         //     context = context.replace(/(([^\s]+\s\s*){70})(.*)/,"$1…") + "...";
         // }
 
-        console.log(exp.trial_info.main_trials[CT])
+        console.log("Main trials ", exp.trial_info.main_trials)
+
+        console.log("Current trial ", exp.trial_info.main_trials[CT])
+        console.log("CT index ", CT)
+
         // console.log("caption: " + exp.trial_info.main_trials[CT]['caption'].raw)
         // console.log("description: " + exp.trial_info.main_trials[CT]['description'].raw)
 
-        condition = exp.trial_info.main_trials[CT]['condition']
+//        condition = exp.trial_info.main_trials[CT]['condition']
 
-        if ((condition == "generated_descr") || (condition == "generated_capt")) {
-            text = exp.trial_info.main_trials[CT][condition];
-        } else {
-            text = exp.trial_info.main_trials[CT][condition].raw;
-        }
+//        if ((condition == "generated_descr") || (condition == "generated_capt")) {
+//          text = exp.trial_info.main_trials[CT][condition];
+  //      } else {
+    //        text = exp.trial_info.main_trials[CT][condition].raw;
+      //  }
 
-        checkbox = 'Can\'t say because image and text seem to be unrelated.';
+        console.log("Picture name ", "images/" + exp.trial_info.main_trials[CT]['filename'])
 
-        if (exp.trial_info.q1 == 'replacement') {
-            q1 = 'How <strong>useful</strong> would the <strong>text alone</strong> be to help someone imagine this picture (e.g, a visually impaired person)?';
-            q1_slider_left = 'Not useful';
-            q1_slider_right = 'Very useful';
-            q2 = '<strong>How much did you learn</strong> from the text that you couldn\'t learn from the image?';
-            q2_slider_left = 'Nothing';
-            q2_slider_right = 'A lot';
+        text = "Please rate the image by how likely it is to appear in each scenario. "
+
+        checkbox = 'Can\'t say because the image does not match with any scenarios.';
+
+        q1 = 'You are browsing a <strong>shopping website</strong>, with the goal of <strong> purchasing an item or experience</strong>.';
+        q1_slider_left = 'Not likely';
+        q1_slider_right = 'Likely';
+        q2 = 'You are browsing a <strong> travel website or blog</strong>, with the goal of <strong>traveling to a new location</strong>.';
+        q2_slider_left = 'Not likely';
+        q2_slider_right = 'Likely';
+
+        q3 = 'You are browsing <strong> social media</strong>, with the goal of <strong>learning more about your friends and family</strong>.'
+        q3_slider_left = 'Not likely';
+        q3_slider_right = 'Likely';
+
+        q4 = 'You are browsing a <strong> health website</strong>, with the goal of </strong>learning how to live a healthier lifestyle</strong>.'
+
+        q5 = 'You are browsing <strong>science journals</strong> (such as National Geographic), with the goal of <strong>learning more about recent science developments</strong>.'
+
+        q6 = 'You are browsing <strong>news journals</strong> (such as New York Times), with the goal of <strong>learning more about recent news developments</strong>.'
+
+/*        if (exp.trial_info.q1 == 'replacement') {
+            q1 = 'You are browsing a <strong>shopping website</strong>, with the goal of purchasing an item or experience.';
+            q1_slider_left = 'Not likely';
+            q1_slider_right = 'Likely';
+            q2 = 'You are browsing a travel website, with the goal of traveling to a new location.';
+            q2_slider_left = 'Not likely';
+            q2_slider_right = 'Likely';
             // q2_checkbox = 'Can\'t say because image and text seem to be unrelated.';
             // q1_checkbox = '';
         } else {
             q2 = 'How <strong>useful</strong> would the <strong>text alone</strong> be to help someone imagine this picture (e.g, a visually impaired person)?';
-            q2_slider_left = 'Not useful';
+            q2_slider_left = 'Not likely';
             q2_slider_right = 'Very useful';
             q1 = '<strong>How much did you learn</strong> from the text that you couldn\'t learn from the image?';
             q1_slider_left = 'Nothing';
             q1_slider_right = 'A lot';
             // q1_checkbox = 'Can\'t say because image and text seem to be unrelated.';
             // q2_checkbox = '';
-        }
+        } */
 
         $("#main").html(
             Mustache.render(viewTemplate, {
@@ -190,6 +215,12 @@ var main = {
                 q2: q2,
                 q2_slider_left: q2_slider_left,
                 q2_slider_right: q2_slider_right,
+                q3: q3,
+                q3_slider_left: q3_slider_left,
+                q3_slider_right: q3_slider_right,
+                q4: q4,
+                q5: q5,
+                q6: q6,
                 checkbox: checkbox
             })
         );
@@ -242,7 +273,7 @@ var main = {
                 var RT = Date.now() - startingTime; // measure RT before anything else
                 var trial_data = {
                     trial_number: CT + 1,
-                    condition: exp.trial_info.main_trials[CT]['condition'],
+//                    condition: exp.trial_info.main_trials[CT]['condition'],
                     picture: "images/" + exp.trial_info.main_trials[CT]['filename'],
                     q1_type: exp.trial_info.q1,
                     q2_type: exp.trial_info.q2,
@@ -264,7 +295,7 @@ var main = {
         // record trial starting time
         var startingTime = Date.now();
     },
-    trials: 32
+    trials: 14
 };
 
 var postTest = {

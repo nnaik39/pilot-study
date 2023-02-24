@@ -1,0 +1,844 @@
+var main_trials = {
+    "images": [
+        {
+            "filename": "news_journals/20.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/xmas_ornaments.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/twitter_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/climber.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/6.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/popmech_9.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/19.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/wired.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/travel_posts.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/10.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/air_quality_edf.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/nutrition.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/europe_music_festival.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/etsy_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/hiking_influencer.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "health/water_sports.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/hotels_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/popmech_3.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/26.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/mental_health.png",
+            "category": "health"
+        },
+        {
+            "filename": "news_journals/16.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/sf_travel.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/model_shot.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/airpods.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/dorm_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "travel/dolomites_italy.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/17.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/popmech_1.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/air_pollution.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/tees_1.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/dorm_1.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/abs_exercises.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/spinach_noodles.png",
+            "category": "travel"
+        },
+        {
+            "filename": "health/abs_exercises_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "science_journals/scientific_american_2.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/popmech_2.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/8.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_5.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_8.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/popmech.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/popmech_7.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_10.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "travel/skier.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/whitney_museum.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/31.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "social_media/snorkeling_selfie.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "shopping/rose_ornament.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/pre_workout.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/hotels_4.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/pinterest.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/airbnb_2.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/twitter_8.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "health/mountain_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "science_journals/deextinction.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/food_influencer_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/polaroid.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/solo_woman_traveller.png",
+            "category": "travel"
+        },
+        {
+            "filename": "science_journals/science_american.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "shopping/dorm_3.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/smithsonian_12.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "shopping/northface_womens_pants.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/scientific_american_3.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/snorkeling.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/dorm_4.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/edf_health.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/scuba_dive.png",
+            "category": "travel"
+        },
+        {
+            "filename": "health/dad_cooking.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/at_home_care.png",
+            "category": "health"
+        },
+        {
+            "filename": "news_journals/28.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/privacy_divider.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/twitter_5.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/smithsonian_6.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/twitter_7.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/travel_influencer.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/cherry_blossoms.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/hiking_influencer_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "shopping/girl_in_sweater_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/health_food_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/teen_with_smoothie.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/solo_traveler.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/food_influencer_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/22.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/hellofresh_ad_1.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/healthy_eating.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/twitter_12.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/reverie_cafe.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/earthquake_rubble.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "shopping/local_crafts.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/yoga_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/travel_posts_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/hiking_influencer_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/popmech_4.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/13.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/long_weekend_2.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/hotels_3.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/smithsonian_3.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/twitter_1.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/32.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/veggie_frittatas.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/tees_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/northface_frontpage_women.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "news_journals/14.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/hellofresh_ad_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "travel/reflective_sunglasses.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/23.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/glamping.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/landscape_james_wheeler.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/zipline.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "shopping/girl_in_sweater.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "news_journals/25.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/healthy_eating_1.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/disneyland.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/twitter_13.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/french_meat.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/etsy_1.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/yoga_pants.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/plane_traveling.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/fashion_influencer.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/twitter_4.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/coney_island.png",
+            "category": "travel"
+        },
+        {
+            "filename": "science_journals/popmech_6.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/twitter_11.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "shopping/tees_3.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/running.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/trail_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "science_journals/natgeo_2.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/trail_running_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/baking_influencer_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/3.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/girl_in_camo.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/smithsonian_2.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/yoga.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/whole_chicken.png",
+            "category": "health"
+        },
+        {
+            "filename": "science_journals/popmech_8.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/shopping_lettuce.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/fashion_influencer_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/smithsonian_13.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/35.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_9.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/12.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "news_journals/15.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "social_media/baking_influencer_1.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/james_charles_makeup.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "health/grocery_aisle.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/twitter_6.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "social_media/twitter_10.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/popmech_5.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "social_media/travel_influencer_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "health/core_exercise.png",
+            "category": "health"
+        },
+        {
+            "filename": "shopping/nintendo.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "news_journals/27.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/enviro_health_risk.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/twitter_9.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/luggage.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/1.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/popmech_11.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/21.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/grubhub_ad.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/rei_ad_2.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/northface_pic.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/women_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "news_journals/sf_skyline.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/healthcare.png",
+            "category": "health"
+        },
+        {
+            "filename": "news_journals/7.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/christmas_decor.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "travel/beef_bourg.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/venice.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/bridge.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/11.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/backpack.png",
+            "category": "travel"
+        },
+        {
+            "filename": "health/hiking.png",
+            "category": "health"
+        },
+        {
+            "filename": "science_journals/smithsonian_7.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "shopping/hungarian_crafts.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "science_journals/popmech_10.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/5.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "news_journals/2.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/airbnb_3.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/long_weekend.png",
+            "category": "travel"
+        },
+        {
+            "filename": "social_media/baking_influencer_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/remote_work.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/airbnb_1.png",
+            "category": "travel"
+        },
+        {
+            "filename": "travel/grindelwald.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/29.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_4.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "health/treadmill.png",
+            "category": "health"
+        },
+        {
+            "filename": "travel/solo_woman_traveller_2.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/apple_ad.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/travel_posts_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "travel/st_moritz.png",
+            "category": "travel"
+        },
+        {
+            "filename": "news_journals/9.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "news_journals/24.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "social_media/fashion_influencer_2.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "news_journals/4.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "health/weight_loss_food.png",
+            "category": "health"
+        },
+        {
+            "filename": "social_media/twitter_3.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/spinning_particles.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "science_journals/smithsonian_14.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "travel/hawaii_dancers.png",
+            "category": "travel"
+        },
+        {
+            "filename": "science_journals/natgeo_1.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "news_journals/34.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "travel/times_square.png",
+            "category": "travel"
+        },
+        {
+            "filename": "shopping/rei_ad_1.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "health/basketball.png",
+            "category": "health"
+        },
+        {
+            "filename": "news_journals/18.png",
+            "category": "news_journals"
+        },
+        {
+            "filename": "shopping/hotel.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "shopping/northface_frontpage_men.png",
+            "category": "shopping"
+        },
+        {
+            "filename": "social_media/food_influencer.png",
+            "category": "social_media"
+        },
+        {
+            "filename": "science_journals/smithsonian_11.png",
+            "category": "science_journals"
+        },
+        {
+            "filename": "travel/sagrada_familia.png",
+            "category": "travel"
+        }
+    ]
+}

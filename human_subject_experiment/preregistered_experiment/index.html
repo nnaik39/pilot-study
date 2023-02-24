@@ -30,7 +30,7 @@
 
         <!-- local trial_info files -->
         <!-- <script src="trial_info/main_trials.js"></script> -->
-        <script src="trial_info/exp_sample.json"></script>
+        <script src="trial_info/pilot_exp.json"></script>
         <script src="trial_info/attention_checks.json"></script>
 
         <!-- views -->
@@ -143,13 +143,14 @@
             <strong>Excerpt of the article the image occurred in:</strong> {{{ context }}}
             </p>
             {{/ context }} -->
+            {{# critical_text }}
+            <p class="critical_text">
+            <strong>{{{ critical_text }}}</strong>
+            </p>
+            {{/ critical_text }}
+
             <div class="picture">
                 <img src={{ picture }} alt="a picture" height="280">
-                {{# critical_text }}
-                <p class="critical_text">
-                <strong>{{{ critical_text }}}</strong>
-                </p>
-                {{/ critical_text }}
             </div>
             <br>
             <hr>
@@ -175,6 +176,68 @@
                 {{# q2 }}
                 <p class="question">Q2: {{{ q2 }}}</p>
                 {{/ q2 }}
+                <p id="slider2_box" class="answer-container blend-out">
+                    {{# q2_slider_left }}
+                    <span class="slider_left">{{{ q2_slider_left }}}</span>
+                    {{/ q2_slider_left }}
+                    <input type="range" id="slider2" class="slider-response" min="0" max="100" value="0"/>
+
+                    {{# q2_slider_right }}
+                    <span class="slider_right">{{{ q2_slider_right }}}</span>
+                    {{/ q2_slider_right }}
+                    <br>
+                </p>
+
+                <br> 
+                
+                {{# q3 }}
+                <p class="question">Q3: {{{ q3 }}}</p>
+                {{/ q3 }}
+                <p id="slider2_box" class="answer-container blend-out">
+                    {{# q2_slider_left }}
+                    <span class="slider_left">{{{ q2_slider_left }}}</span>
+                    {{/ q2_slider_left }}
+                    <input type="range" id="slider2" class="slider-response" min="0" max="100" value="0"/>
+
+                    {{# q2_slider_right }}
+                    <span class="slider_right">{{{ q2_slider_right }}}</span>
+                    {{/ q2_slider_right }}
+                    <br>
+                </p>
+
+                {{# q4 }}
+                <p class="question">Q4: {{{ q4 }}}</p>
+                {{/ q4 }}
+                <p id="slider2_box" class="answer-container blend-out">
+                    {{# q2_slider_left }}
+                    <span class="slider_left">{{{ q2_slider_left }}}</span>
+                    {{/ q2_slider_left }}
+                    <input type="range" id="slider2" class="slider-response" min="0" max="100" value="0"/>
+
+                    {{# q2_slider_right }}
+                    <span class="slider_right">{{{ q2_slider_right }}}</span>
+                    {{/ q2_slider_right }}
+                    <br>
+                </p>
+
+                {{# q5 }}
+                <p class="question">Q5: {{{ q5 }}}</p>
+                {{/ q5 }}
+                <p id="slider2_box" class="answer-container blend-out">
+                    {{# q2_slider_left }}
+                    <span class="slider_left">{{{ q2_slider_left }}}</span>
+                    {{/ q2_slider_left }}
+                    <input type="range" id="slider2" class="slider-response" min="0" max="100" value="0"/>
+
+                    {{# q2_slider_right }}
+                    <span class="slider_right">{{{ q2_slider_right }}}</span>
+                    {{/ q2_slider_right }}
+                    <br>
+                </p>
+
+                {{# q6 }}
+                <p class="question">Q6: {{{ q6 }}}</p>
+                {{/ q6 }}
                 <p id="slider2_box" class="answer-container blend-out">
                     {{# q2_slider_left }}
                     <span class="slider_left">{{{ q2_slider_left }}}</span>
@@ -242,7 +305,7 @@
             <button id="next">Next</button>
             {{/ button }}
 
-            <p id="error" class="help-text" style="visibility: hidden;">You haven't responded to all questions. To respond, please adjust the sliders accordingly. You can also tick the checkbox if text and image seem too unrelated to respond to the questions.</p>
+            <p id="error" class="help-text" style="visibility: hidden;">You haven't responded to all questions. To respond, please adjust the sliders accordingly. You can also tick the checkbox if the image does not match with any of the scenarios.</p>
         </div>
         </script>
 

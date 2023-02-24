@@ -1,0 +1,144 @@
+var main_trials = {
+    "images": [
+        {
+            "filename": "health/yoga_pants.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/yoga_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/teen_with_smoothie.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/grocery_aisle.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/air_quality_edf.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/abs_exercises_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/mountain_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/at_home_care.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/healthy_eating_1.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/enviro_health_risk.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/healthcare.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/dad_cooking.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/air_pollution.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/health_food_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/edf_health.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/veggie_frittatas.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/snorkeling.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/trail_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/basketball.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/weight_loss_food.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/water_sports.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/trail_running_2.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/whole_chicken.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/abs_exercises.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/pre_workout.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/running.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/treadmill.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/nutrition.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/shopping_lettuce.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/yoga.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/healthy_eating.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/hiking.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/women_running.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/mental_health.png",
+            "category": "health"
+        },
+        {
+            "filename": "health/core_exercise.png",
+            "category": "health"
+        }
+    ]
+}
