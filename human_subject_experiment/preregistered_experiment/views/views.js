@@ -74,10 +74,10 @@ var botcaptcha = {
 var intro = {
     name: "intro",
     // introduction title
-    title: "CoCoLab Stanford",
+    title: "Stanford NLP Lab",
     // introduction text
     text:
-        "Thank you for participating in our study. In this study, you will see 32 pictures with a corresponding text for each and rate how they relate. The whole HIT should take about 13 minutes. Please only participate once in this series of HITs.<br>Please do <strong>not</strong> participate on a mobile device since the page won't display properly.<br><small>If you have any questions or concerns, don't hesitate to contact me at ekreiss@stanford.edu</small>",
+        "Thank you for participating in our study. In this study, you will see 14 pictures with a corresponding activity for each and rate how likely it is that you come across this image while doing each of the six activities. The whole HIT should take about 13 minutes. Please only participate once in this series of HITs.<br>Please do <strong>not</strong> participate on a mobile device since the page won't display properly.<br><small>If you have any questions or concerns, don't hesitate to contact me at ekreiss@stanford.edu</small>",
     legal_info:
         "<strong>LEGAL INFORMATION</strong>:<br><br>We invite you to participate in a research study on language production and comprehension.<br>Your experimenter will ask you to do a linguistic task such as reading sentences or words, naming pictures or describing scenes, making up sentences of your own, or participating in a simple language game.<br><br>You will be paid for your participation at the posted rate.<br><br>There are no risks or benefits of any kind involved in this study.<br><br>If you have read this form and have decided to participate in this experiment, please understand your participation is voluntary and you have the right to withdraw your consent or discontinue participation at any time without penalty or loss of benefits to which you are otherwise entitled. You have the right to refuse to do particular tasks. Your individual privacy will be maintained in all published and written data resulting from the study.<br>You may print this form for your records.<br><br>CONTACT INFORMATION:<br>If you have any questions, concerns or complaints about this research study, its procedures, risks and benefits, you should contact the Protocol Director Meghan Sumner at <br>(650)-725-9336<br><br>If you are not satisfied with how this study is being conducted, or if you have any concerns, complaints, or general questions about the research or your rights as a participant, please contact the Stanford Institutional Review Board (IRB) to speak to someone independent of the research team at (650)-723-2480 or toll free at 1-866-680-2906. You can also write to the Stanford IRB, Stanford University, 3000 El Camino Real, Five Palo Alto Square, 4th Floor, Palo Alto, CA 94306 USA.<br><br>If you agree to participate, please proceed to the study tasks.",
     // introduction's slide proceeding button text
@@ -88,7 +88,7 @@ var intro = {
 
         $("#main").html(
             Mustache.render(viewTemplate, {
-                picture: "images/cocologo.png",
+                picture: "images/stanford_nlp_group.jpeg",
                 title: this.title,
                 text: this.text,
                 legal_info: this.legal_info,
@@ -140,88 +140,33 @@ var main = {
         // fill variables in view-template
         var viewTemplate = $("#main-view").html();
 
-        // generator_options = _.shuffle(['human generated', 'computer generated']);
-        // context = exp.trial_info.main_trials[CT]['context'].raw;
-        // if (context.split(' ').length > 70){
-        //     context = context.replace(/(([^\s]+\s\s*){70})(.*)/,"$1…") + "...";
-        // }
-
         console.log("Main trials ", exp.trial_info.main_trials)
 
         console.log("Current trial ", exp.trial_info.main_trials[CT])
         console.log("CT index ", CT)
 
-        // console.log("caption: " + exp.trial_info.main_trials[CT]['caption'].raw)
-        // console.log("description: " + exp.trial_info.main_trials[CT]['description'].raw)
-
-//        condition = exp.trial_info.main_trials[CT]['condition']
-
-//        if ((condition == "generated_descr") || (condition == "generated_capt")) {
-//          text = exp.trial_info.main_trials[CT][condition];
-  //      } else {
-    //        text = exp.trial_info.main_trials[CT][condition].raw;
-      //  }
-
         console.log("Picture name ", "images/" + exp.trial_info.main_trials[CT]['filename'])
 
-        text = "Please rate the image by how likely it is to appear in each scenario. "
+        text = "How likely is it that you come across this image while doing the following activities?"
 
         checkbox = 'Can\'t say because the image does not match with any scenarios.';
 
-        q1 = 'You are browsing a <strong>shopping website</strong>, with the goal of <strong> purchasing an item or experience</strong>.';
-        q1_slider_left = 'Not likely';
-        q1_slider_right = 'Likely';
-        q2 = 'You are browsing a <strong> travel website or blog</strong>, with the goal of <strong>traveling to a new location</strong>.';
-        q2_slider_left = 'Not likely';
-        q2_slider_right = 'Likely';
-
-        q3 = 'You are browsing <strong> social media</strong>, with the goal of <strong>learning more about your friends and family</strong>.'
-        q3_slider_left = 'Not likely';
-        q3_slider_right = 'Likely';
-
-        q4 = 'You are browsing a <strong> health website</strong>, with the goal of </strong>learning how to live a healthier lifestyle</strong>.'
-
-        q5 = 'You are browsing <strong>science journals</strong> (such as National Geographic), with the goal of <strong>learning more about recent science developments</strong>.'
-
-        q6 = 'You are browsing <strong>news journals</strong> (such as New York Times), with the goal of <strong>learning more about recent news developments</strong>.'
-
-/*        if (exp.trial_info.q1 == 'replacement') {
-            q1 = 'You are browsing a <strong>shopping website</strong>, with the goal of purchasing an item or experience.';
-            q1_slider_left = 'Not likely';
-            q1_slider_right = 'Likely';
-            q2 = 'You are browsing a travel website, with the goal of traveling to a new location.';
-            q2_slider_left = 'Not likely';
-            q2_slider_right = 'Likely';
-            // q2_checkbox = 'Can\'t say because image and text seem to be unrelated.';
-            // q1_checkbox = '';
-        } else {
-            q2 = 'How <strong>useful</strong> would the <strong>text alone</strong> be to help someone imagine this picture (e.g, a visually impaired person)?';
-            q2_slider_left = 'Not likely';
-            q2_slider_right = 'Very useful';
-            q1 = '<strong>How much did you learn</strong> from the text that you couldn\'t learn from the image?';
-            q1_slider_left = 'Nothing';
-            q1_slider_right = 'A lot';
-            // q1_checkbox = 'Can\'t say because image and text seem to be unrelated.';
-            // q2_checkbox = '';
-        } */
+        slider_left = 'Not likely';
+        slider_right = 'Likely';
 
         $("#main").html(
             Mustache.render(viewTemplate, {
                 critical_text: text,
                 picture: "images/" + exp.trial_info.main_trials[CT]['filename'],
-                q1: q1,
-                q1_slider_left: q1_slider_left,
-                q1_slider_right: q1_slider_right,
-                q2: q2,
-                q2_slider_left: q2_slider_left,
-                q2_slider_right: q2_slider_right,
-                q3: q3,
-                q3_slider_left: q3_slider_left,
-                q3_slider_right: q3_slider_right,
-                q4: q4,
-                q5: q5,
-                q6: q6,
-                checkbox: checkbox
+                slider_left: slider_left,
+                slider_right: slider_right,
+                q1: exp.trial_info.q1,
+                q2: exp.trial_info.q2,
+                q3: exp.trial_info.q3,
+                q4: exp.trial_info.q4,
+                q5: exp.trial_info.q5,
+                q6: exp.trial_info.q6
+//                checkbox: checkbox
             })
         );
 
@@ -273,17 +218,26 @@ var main = {
                 var RT = Date.now() - startingTime; // measure RT before anything else
                 var trial_data = {
                     trial_number: CT + 1,
-//                    condition: exp.trial_info.main_trials[CT]['condition'],
                     picture: "images/" + exp.trial_info.main_trials[CT]['filename'],
-                    q1_type: exp.trial_info.q1,
-                    q2_type: exp.trial_info.q2,
-                    q1: q1,
-                    q2: q2,
+//                    q1_type: exp.trial_info.q1,
+//                    q2_type: exp.trial_info.q2,
+                    q1: exp.trial_info.q1,
+                    q2: exp.trial_info.q2,
+                    q3: exp.trial_info.q3,
+                    q4: exp.trial_info.q4,
+                    q5: exp.trial_info.q5,
+                    q6: exp.trial_info.q6,
                     q1_sliderval: $('#slider1').val(),
                     q2_sliderval: $('#slider2').val(),
-                    checkbox: $('#checkbox').prop('checked'),
+                    q3_sliderval: $('#slider3').val(),
+                    q4_sliderval: $('#slider4').val(),
+                    q5_sliderval: $('#slider5').val(),
+                    q6_sliderval: $('#slider6').val(),
+                    //                    checkbox: $('#checkbox').prop('checked'),
                     comments: $('#comments').val()
                 };
+                console.log('Trial data ', trial_data)
+
                 exp.trial_data.push(trial_data);
                 exp.findNextView();
             } else {

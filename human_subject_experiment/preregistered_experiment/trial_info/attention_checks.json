@@ -1,6 +1,6 @@
 var attention_checks = [
     {
-        "filename": "attentionchecks/book.png",
+        "filename": "attentionchecks/shopping.png",
         "text": {
             "raw": "A man with a black-and-white suit leaning against a piano"
         },
@@ -11,7 +11,7 @@ var attention_checks = [
         // }
     },
     {
-        "filename": "attentionchecks/man.png",
+        "filename": "attentionchecks/scientist.png",
         "text": {
             "raw": "Arboreous Arboterium, a tree that primarily grows in California"
         },

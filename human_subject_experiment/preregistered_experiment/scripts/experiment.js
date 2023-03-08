@@ -12,13 +12,7 @@ exp.customize = function() {
         thanks
     ];
 
-    console.log("Main trials in experiment.js! ", main_trials)
     main_trials = _.shuffle(main_trials)[0]
-
-//    console.log(main_trials[0]['filename'])
-//    console.log(main_trials[0]['category'])
-//    console.log(main_trials[1]['filename'])
-//    console.log(main_trials[1]['category'])
 
     health = [];
 
@@ -27,10 +21,11 @@ exp.customize = function() {
             health.push(main_trials[i])
         }
     }
-    console.log('Health! ', health)
+
+    //    console.log('Health! ', health)
 
     health = _.sampleSize(health, 2);
-    console.log('Health chosen 2 ', health)
+//    console.log('Health chosen 2 ', health)
 
     news_journals = [];
 
@@ -39,10 +34,10 @@ exp.customize = function() {
             news_journals.push(main_trials[i])
         }
     }
-    console.log('news_journals! ', news_journals)
+//    console.log('news_journals! ', news_journals)
 
     news_journals = _.sampleSize(news_journals, 2);
-    console.log('news_journals chosen 2 ', news_journals)
+//    console.log('news_journals chosen 2 ', news_journals)
 
     science_journals = [];
 
@@ -51,10 +46,10 @@ exp.customize = function() {
             science_journals.push(main_trials[i])
         }
     }
-    console.log('science_journals! ', science_journals)
+//    console.log('science_journals! ', science_journals)
 
     science_journals = _.sampleSize(science_journals, 2);
-    console.log('science_journals chosen 2 ', science_journals)
+//    console.log('science_journals chosen 2 ', science_journals)
 
     travel = [];
 
@@ -63,10 +58,10 @@ exp.customize = function() {
             travel.push(main_trials[i])
         }
     }
-    console.log('travel! ', travel)
+//    console.log('travel! ', travel)
 
     travel = _.sampleSize(travel, 2);
-    console.log('travel chosen 2 ', travel)    
+//    console.log('travel chosen 2 ', travel)    
 
     shopping = [];
 
@@ -75,10 +70,10 @@ exp.customize = function() {
             shopping.push(main_trials[i])
         }
     }
-    console.log('shopping! ', shopping)
+//    console.log('shopping! ', shopping)
 
     shopping = _.sampleSize(shopping, 2);
-    console.log('shopping chosen 2 ', shopping)    
+//    console.log('shopping chosen 2 ', shopping)    
 
     social_media = [];
 
@@ -87,10 +82,10 @@ exp.customize = function() {
             social_media.push(main_trials[i])
         }
     }
-    console.log('social_media! ', social_media)
+//    console.log('social_media! ', social_media)
 
     social_media = _.sampleSize(social_media, 2);
-    console.log('social_media chosen 2 ', social_media)    
+//    console.log('social_media chosen 2 ', social_media)    
 
     main_trials.length = 0
     main_trials.push(...health)
@@ -100,8 +95,7 @@ exp.customize = function() {
     main_trials.push(...shopping)
     main_trials.push(...social_media)
 
-//    main_trials = health + news_journals
-    console.log('Main trials (after shuffle) in experiment.js ', main_trials)
+//    console.log('Main trials (after shuffle) in experiment.js ', main_trials)
 
     // prepare information about trials (procedure)
 /*    cond = _.shuffle([
@@ -119,8 +113,8 @@ exp.customize = function() {
         main_trials[i]['condition'] = cond.pop()
     }
     console.log(main_trials)*/
-    console.log("attention_checks")
-    console.log(attention_checks)
+//    console.log("attention_checks")
+ //   console.log(attention_checks)
 
     // add attention checks
     main_trials.push(...attention_checks);
@@ -132,9 +126,20 @@ exp.customize = function() {
     console.log(this.trial_info.main_trials);
 
     // sample question order
-    questions = _.shuffle(["replacement", "learn"])
+    shopping = "You are browsing a <strong>shopping website</strong>, with the goal of purchasing an item or experience."
+    travel = "You are browsing a <strong> travel website or blog</strong>, with the goal of traveling to a new location."
+    social_media = "You are browsing <strong> social media</strong>, with the goal of learning more about your connections."
+    health = "You are browsing a <strong> health website</strong>, with the goal of learning how to live a healthier lifestyle."
+    science_journals = "You are browsing <strong>science journals</strong> (such as National Geographic), with the goal of learning more about recent science developments."
+    news_journals = "You are browsing <strong>news journals</strong> (such as New York Times), with the goal of learning more about recent news developments."
+
+    questions = _.shuffle([health, shopping, travel, social_media, science_journals, news_journals])
     this.trial_info.q1 = questions.pop()
     this.trial_info.q2 = questions.pop()
+    this.trial_info.q3 = questions.pop()
+    this.trial_info.q4 = questions.pop()
+    this.trial_info.q5 = questions.pop()
+    this.trial_info.q6 = questions.pop()
 
     // adds progress bars to the views listed
     // view's name is the same as object's name

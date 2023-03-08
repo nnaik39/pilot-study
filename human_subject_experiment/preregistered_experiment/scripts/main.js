@@ -227,7 +227,7 @@ exp.submit = function() {
             value: HITData["assignmentId"]
         }).appendTo(form);
     } else if (config_deploy.deployMethod === "Prolific") {
-        console.log();
+        console.log('submitting to Prolific server');
     } else if (config_deploy.deployMethod === "directLink") {
         console.log();
     } else if (config_deploy.deployMethod === "debug") {
@@ -247,6 +247,9 @@ exp.submit = function() {
     if (config_deploy.liveExperiment) {
         console.log("submits");
         //submitResults(config_deploy.contact_email, config_deploy.submissionURL, data);
+
+        console.log("submission URL ", config_deploy.submissionURL)
+
         submitResults(
             config_deploy.contact_email,
             config_deploy.submissionURL,
