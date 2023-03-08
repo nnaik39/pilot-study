@@ -1,0 +1,12 @@
+var main_trials = {
+    "images": [
+        {
+            "filename": "health/abs_exercises.png",
+            "category": "health",
+        },
+        {
+            "filename": "health/abs_exercises_2.png",
+            "category": "health"
+        }
+    ]
+}
