@@ -130,8 +130,8 @@ exp.customize = function() {
     travel = "You are browsing a <strong> travel website or blog</strong>, with the goal of traveling to a new location."
     social_media = "You are browsing <strong> social media</strong>, with the goal of learning more about your connections."
     health = "You are browsing a <strong> health website</strong>, with the goal of learning how to live a healthier lifestyle."
-    science_journals = "You are browsing <strong>science journals</strong> (such as National Geographic), with the goal of learning more about recent science developments."
-    news_journals = "You are browsing <strong>news journals</strong> (such as New York Times), with the goal of learning more about recent news developments."
+    science_journals = "You are browsing <strong>science magazines</strong> (such as National Geographic), with the goal of learning more about recent science developments."
+    news_journals = "You are browsing <strong>news websites</strong> (such as New York Times), with the goal of learning more about recent news developments."
 
     questions = _.shuffle([health, shopping, travel, social_media, science_journals, news_journals])
     this.trial_info.q1 = questions.pop()
