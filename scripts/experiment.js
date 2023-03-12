@@ -22,10 +22,10 @@ exp.customize = function() {
         }
     }
 
-    //    console.log('Health! ', health)
+    console.log('Health! ', health)
 
     health = _.sampleSize(health, 2);
-//    console.log('Health chosen 2 ', health)
+    console.log('Health chosen 2 ', health)
 
     news_journals = [];
 
@@ -34,10 +34,10 @@ exp.customize = function() {
             news_journals.push(main_trials[i])
         }
     }
-//    console.log('news_journals! ', news_journals)
+    console.log('news_journals! ', news_journals)
 
     news_journals = _.sampleSize(news_journals, 2);
-//    console.log('news_journals chosen 2 ', news_journals)
+    console.log('news_journals chosen 2 ', news_journals)
 
     science_journals = [];
 
@@ -49,7 +49,7 @@ exp.customize = function() {
 //    console.log('science_journals! ', science_journals)
 
     science_journals = _.sampleSize(science_journals, 2);
-//    console.log('science_journals chosen 2 ', science_journals)
+    console.log('science_journals chosen 2 ', science_journals)
 
     travel = [];
 
@@ -61,7 +61,7 @@ exp.customize = function() {
 //    console.log('travel! ', travel)
 
     travel = _.sampleSize(travel, 2);
-//    console.log('travel chosen 2 ', travel)    
+    console.log('travel chosen 2 ', travel)    
 
     shopping = [];
 
@@ -73,7 +73,7 @@ exp.customize = function() {
 //    console.log('shopping! ', shopping)
 
     shopping = _.sampleSize(shopping, 2);
-//    console.log('shopping chosen 2 ', shopping)    
+    console.log('shopping chosen 2 ', shopping)    
 
     social_media = [];
 
@@ -85,7 +85,7 @@ exp.customize = function() {
 //    console.log('social_media! ', social_media)
 
     social_media = _.sampleSize(social_media, 2);
-//    console.log('social_media chosen 2 ', social_media)    
+    console.log('social_media chosen 2 ', social_media)    
 
     main_trials.length = 0
     main_trials.push(...health)

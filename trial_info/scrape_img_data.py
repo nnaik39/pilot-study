@@ -5,7 +5,7 @@ import random
 
 #os.chdir('/tmp')
 
-# Note: Run from the directory the file is stored in
+# Note: Run from the directory this file is stored in
 
 health_files = [f for f in listdir('../images/health') if isfile(join('../images/health', f))]
 health_files.remove('.DS_Store')

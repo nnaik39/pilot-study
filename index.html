@@ -42,7 +42,7 @@
             var ut_id = "67af9692b28ca9b1d1a07e648131902c";
             if (UTWorkerLimitReached(ut_id)) {
                 $(".slide").hide();
-                $("body").html("Unfortunately, you have already participated in this or a similar HIT and the requester doesn't allow repeated participations on this task. We're sorry for the inconvenience! Please click 'Return HIT' to avoid any impact on your approval rating.");
+                $("body").html("Unfortunately, you have already participated in this or a similar study and the requester doesn't allow repeated participations on this task. We're sorry for the inconvenience! Please click 'Return Study' to avoid any impact on your approval rating.");
             }
           });
         </script>
@@ -322,7 +322,7 @@
             {{/ text }}
             <form>
             <p>
-                <label for="HitCorrect">Did you read the instructions and do you think you did the HIT correctly?</label>
+                <label for="HitCorrect">Did you read the instructions and do you think you did the study correctly?</label>
                 <select id="HitCorrect" name="HitCorrect">
                     <option></option>
                     <option value="0">No</option>
@@ -336,12 +336,14 @@
             </p>
             <p>
                 <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
+                <input type="string" name="gender" id="gender" />
+
+<!--                <select id="gender" name="gender">
                     <option></option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
-                </select>
+                </select> -->
             </p>
             <p>
                 <label for="education">Level of Education:</label>
@@ -362,9 +364,9 @@
                 <label for="enjoyment">Enjoyment:</label>
                 <select id="enjoyment" name="enjoyment">
                     <option></option>
-                    <option value="0">Worse than the Average Hit</option>
-                    <option value="1">Average Hit</option>
-                    <option value="2">Better than the Average Hit</option>
+                    <option value="0">Worse than the Average Study</option>
+                    <option value="1">Average Study</option>
+                    <option value="2">Better than the Average Study</option>
                 </select>
             </p>
             <p class="comment-sect">
@@ -393,6 +395,7 @@
             {{/ thanksMessage }}
             {{^ thanksMessage }}
             <h1 class="thanks-message nodisplay">Thank you for taking part in this experiment!</h1>
+            <h3 class="thanks-message nodisplay"> Your completion code is CNTTX286. </h3>
             {{/ thanksMessage }}
             {{# extraMessage }}
             <h2 class="extra-message nodisplay">{{{ extraMessage }}}</h2>
