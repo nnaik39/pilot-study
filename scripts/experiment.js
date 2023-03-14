@@ -127,7 +127,7 @@ exp.customize = function() {
 
     // sample question order
     shopping = "You are browsing a <strong>shopping website</strong>, with the goal of purchasing an item or experience."
-    travel = "You are browsing a <strong> travel website or blog</strong>, with the goal of traveling to a new location."
+    travel = "You are browsing a <strong> travel website</strong>, with the goal of traveling to a new location."
     social_media = "You are browsing <strong> social media</strong>, with the goal of learning more about your connections."
     health = "You are browsing a <strong> health website</strong>, with the goal of learning how to live a healthier lifestyle."
     science_journals = "You are browsing <strong>science magazines</strong> (such as National Geographic), with the goal of learning more about recent science developments."
